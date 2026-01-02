@@ -14,4 +14,13 @@ public class Task {
     private Long id;
     private String title;
     private boolean completed;
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setCompleted(boolean b) {
+        this.completed = b;
+    }
+
 }
