@@ -23,4 +23,8 @@ public class Task {
         this.completed = b;
     }
 
+    public boolean isCompleted() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+
 }
