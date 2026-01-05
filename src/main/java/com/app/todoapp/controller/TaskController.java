@@ -1,37 +1,19 @@
 package com.app.todoapp.controller;
 import java.util.List;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-
 import com.app.todoapp.models.Task;
 import com.app.todoapp.services.TaskService;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
 @Controller
-//@RequestMapping("/tasks")
 public class TaskController {
-
-    public TaskController(com.app.todoapp.services.TaskService taskService) {
+    public TaskController(TaskService taskService) {
         this.taskService = taskService;
     }
-
     private final TaskService taskService;  
-
-    
-    public String requestMethodName(@RequestParam String param) {
-        return new String();
-    }
-    
-    public String getMethodName(@RequestParam String param) {
-        return new String();
-    }
     @GetMapping
     public String getTasks(Model model) {
         List<Task> tasks=taskService.getAllTasks();
@@ -54,4 +36,3 @@ public class TaskController {
         return "redirect:/";
     }
 }
-
