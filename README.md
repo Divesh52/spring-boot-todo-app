@@ -30,14 +30,6 @@ spring-boot-todo-app/
 ├─ pom.xml             # Maven dependencies
 └─ .gitignore          # Ignored files
 
-**Roadmap**
-
-1. ☑️Initial Spring Boot setup
-2. ☑️Basic Task entity and CRUD operations
-3. Add user authentication
-4. Improve UI with Thymeleaf
-5. Connect to MySQL database
-6. Add task deadlines and reminders
 
 **Contribution**
 This project is primarily for personal learning, but contributions or suggestions are welcome.
