@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class TaskController {
     public TaskController(TaskService taskService) {
         this.taskService = taskService;
-    }
+    } 
     private final TaskService taskService;  
     @GetMapping
     public String getTasks(Model model) {
