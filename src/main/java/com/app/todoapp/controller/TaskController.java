@@ -22,7 +22,7 @@ public class TaskController {
     public String getTasks(Model model) {
         List<Task> tasks = taskService.getAllTasks();
         model.addAttribute("tasks", tasks);
-        return "task";   // Make sure your file is task.html
+        return "index";   // Make sure your file is index.html
     }
 
     @PostMapping("/")
