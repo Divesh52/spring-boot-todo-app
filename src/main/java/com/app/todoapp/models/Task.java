@@ -10,21 +10,10 @@ import lombok.Data;
 @Data
 public class Task {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String title;
+
     private boolean completed;
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setCompleted(boolean b) {
-        this.completed = b;
-    }
-
-    public boolean isCompleted() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
 }
