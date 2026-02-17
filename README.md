@@ -36,5 +36,4 @@ This project is primarily for personal learning, but contributions or suggestion
 
 **Status**
 
-🚀 In progress — learning and building step by step.
-
+Complete
