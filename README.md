@@ -9,8 +9,6 @@ tasks efficiently, and practicing Spring Boot fundamentals.
 3. Organized service, controller, and repository structure
 4. Maven-based project for easy setup and dependency management
 
-**(This project is a work in progress — new features and enhancements will be added step by step.)**
-
 **Tech Stack**
 1. Java 21
 2. Spring Boot
